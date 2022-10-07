@@ -1,4 +1,4 @@
-/*
+package guru.sfg.brewery.web.controllers;/*
  *  Copyright 2020 the original author or authors.
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,7 +15,6 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package guru.sfg.brewery.web.controllers;
 
 import guru.sfg.brewery.domain.Customer;
 import guru.sfg.brewery.repositories.CustomerRepository;
