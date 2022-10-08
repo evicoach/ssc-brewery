@@ -20,6 +20,7 @@ package guru.sfg.brewery.web.controllers;
 import guru.sfg.brewery.domain.Brewery;
 import guru.sfg.brewery.services.BreweryService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
