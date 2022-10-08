@@ -13,6 +13,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.LdapShaPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
@@ -24,9 +25,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //        return NoOpPasswordEncoder.getInstance();
 //    }
 
+//    @Bean
+//    PasswordEncoder passwordEncoder(){
+//        return new LdapShaPasswordEncoder();
+//    }
+
     @Bean
     PasswordEncoder passwordEncoder(){
-        return new LdapShaPasswordEncoder();
+        return new StandardPasswordEncoder();
     }
 
     @Override
